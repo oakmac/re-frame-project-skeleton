@@ -1,0 +1,17 @@
+{:source-paths ["src-cljs"]
+
+ :dependencies [[binaryage/oops "0.7.0"]
+                [com.taoensso/timbre "4.10.0"]
+                [funcool/bide "1.6.0"]
+                [re-frame "0.12.0"]
+                [reagent "0.10.0"]]
+
+ :builds
+ {:ui
+  {:target :browser
+   :output-dir "public/js"
+   :asset-path "/js"
+   :modules {:main {:init-fn {{PROJECT_NAME}}.core/init!}}
+   :devtools {:after-load {{PROJECT_NAME}}.core/on-refresh
+              :http-root "public"
+              :http-port 8888}}}}

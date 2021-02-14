@@ -1,0 +1,25 @@
+{
+  "name": "@chrisoakman/re-frame-project-skeleton",
+  "description": "create a project skeleton for a re-frame application",
+  "version": "1.0.0",
+  "author": "Chris Oakman <chris@oakmac.com> (https://chrisoakman.com/)",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/oakmac/re-frame-project-skeleton.git"
+  },
+  "bugs": "https://github.com/oakmac/re-frame-project-skeleton/issues",
+  "license": "ISC",
+  "bin": "./bin/create-re-frame-skeleton.js",
+  "files": [
+    "/bin/create-re-frame-skeleton.js",
+    "template",
+    "LICENSE.md",
+    "README.md"
+  ],
+  "scripts": {
+    "prepack": "rm --force *.diff && rm --force *.tgz"
+  },
+  "dependencies": {
+    "fs-plus": "3.1.1"
+  }
+}
